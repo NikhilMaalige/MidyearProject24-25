@@ -293,7 +293,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 1095549458}
   - component: {fileID: 1095549457}
   - component: {fileID: 1095549456}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: OtherViewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,7 +779,7 @@ Transform:
   m_GameObject: {fileID: 1095549454}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.83, z: -3.47}
+  m_LocalPosition: {x: 0, y: 0.83, z: -3.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -876,7 +876,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 9
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -984,7 +984,7 @@ GameObject:
   - component: {fileID: 1284748123}
   - component: {fileID: 1284748122}
   - component: {fileID: 1284748121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1074,7 +1074,7 @@ Transform:
   m_GameObject: {fileID: 1284748120}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6, y: 2.5, z: 0.01}
+  m_LocalPosition: {x: 0.27, y: 2.5, z: 1.43}
   m_LocalScale: {x: 1, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1236,6 +1236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RegularViewport: {fileID: 330585543}
   OtherViewport: {fileID: 1095549454}
+  toggle: 1
 --- !u!1 &1986897001
 GameObject:
   m_ObjectHideFlags: 0
