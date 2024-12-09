@@ -8,17 +8,23 @@ public class CameraScript : MonoBehaviour
     public GameObject RegularViewport;
     public GameObject OtherViewport;
 
+    public int toggle = 1;
 
     void Update()
     {
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("e"))
         {
-            RegularViewportToggle();
-        }
-
-        if (Input.GetKeyDown("2"))
-        {
-            OtherViewportToggle();
+            if (toggle == 1) 
+            {
+                OtherViewportToggle();
+                toggle++; 
+            }
+            else 
+            {
+                RegularViewportToggle(); 
+                toggle--;  
+            }
+            
         }
     }
 
