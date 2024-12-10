@@ -938,6 +938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 330585545}
+  playerCamera2: {fileID: 1095549458}
   walkSpeed: 6
   runSpeed: 12
   jumpPower: 4
@@ -1160,7 +1161,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 29e5eda7910a4854c9c0022fc49d59bf, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1237,6 +1238,7 @@ MonoBehaviour:
   RegularViewport: {fileID: 330585543}
   OtherViewport: {fileID: 1095549454}
   toggle: 1
+  isMovementEnabled: 1
 --- !u!1 &1986897001
 GameObject:
   m_ObjectHideFlags: 0
