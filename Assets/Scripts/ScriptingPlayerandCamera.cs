@@ -5,11 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    // Viewports
     public GameObject RegularViewport;
     public GameObject OtherViewport;
 
-    // Player movement settings
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
     public float jumpPower = 7f;
@@ -23,9 +21,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
-    private int toggle = 1; // 1 for RegularViewport, 2 for OtherViewport
+    private int toggle = 1;
 
-    private bool canMove = true; // Controls whether the player can move
+    private bool canMove = true; 
 
     void Start()
     {
@@ -33,14 +31,12 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        // Ensure the RegularViewport is active at start
         RegularViewport.SetActive(true);
         OtherViewport.SetActive(false);
     }
 
     void Update()
     {
-        // Handle viewport toggling
         if (Input.GetKeyDown("e"))
         {
             if (toggle == 1)
@@ -55,14 +51,12 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Camera rotation (always enabled)
         float mouseX = Input.GetAxis("Mouse X") * lookSpeed;
         float mouseY = -Input.GetAxis("Mouse Y") * lookSpeed;
 
         rotationX += mouseY;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
 
-        // Rotate active camera
         if (RegularViewport.activeSelf)
         {
             RegularViewport.GetComponentInChildren<Camera>().transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
@@ -72,16 +66,12 @@ public class PlayerController : MonoBehaviour
             OtherViewport.GetComponentInChildren<Camera>().transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
         }
 
-        // Rotate player for horizontal input
         transform.rotation *= Quaternion.Euler(0, mouseX, 0);
 
-        // Apply gravity to always ensure falling
         ApplyGravity();
 
-        // Disable movement in OtherViewport
         if (!canMove) return;
 
-        // Player movement
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
@@ -100,7 +90,6 @@ public class PlayerController : MonoBehaviour
             moveDirection.y = movementDirectionY;
         }
 
-        // Handle crouching
         if (Input.GetKey(KeyCode.R))
         {
             characterController.height = crouchHeight;
@@ -114,7 +103,6 @@ public class PlayerController : MonoBehaviour
             runSpeed = 12f;
         }
 
-        // Apply movement
         characterController.Move(moveDirection * Time.deltaTime);
     }
 
@@ -131,13 +119,13 @@ public class PlayerController : MonoBehaviour
     {
         RegularViewport.SetActive(true);
         OtherViewport.SetActive(false);
-        canMove = true; // Enable player movement
+        canMove = true;
     }
 
     void SwitchToOtherViewport()
     {
         RegularViewport.SetActive(false);
         OtherViewport.SetActive(true);
-        canMove = false; // Disable player movement but allow looking around
+        canMove = false;
     }
 }
