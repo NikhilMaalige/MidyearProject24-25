@@ -1134,7 +1134,6 @@ GameObject:
   - component: {fileID: 1095549457}
   - component: {fileID: 1095549456}
   - component: {fileID: 1095549461}
-  - component: {fileID: 1095549459}
   m_Layer: 3
   m_Name: OtherViewport
   m_TagString: MainCamera
@@ -1248,7 +1247,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 9
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1260,20 +1259,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1095549459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095549454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 290399c0b82631841ace1c7c0a6f8c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 416976272}
-  testingButton: {fileID: 800820669}
 --- !u!143 &1095549461
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1310,6 +1295,7 @@ GameObject:
   - component: {fileID: 1104852451}
   - component: {fileID: 1104852453}
   - component: {fileID: 1104852454}
+  - component: {fileID: 1104852455}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1383,6 +1369,21 @@ MonoBehaviour:
   defaultHeight: 2
   crouchHeight: 1
   crouchSpeed: 1
+--- !u!114 &1104852455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104852450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 290399c0b82631841ace1c7c0a6f8c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 416976272}
+  testingButton: {fileID: 800820669}
+  otherViewportCamera: {fileID: 1095549458}
 --- !u!1 &1154682033
 GameObject:
   m_ObjectHideFlags: 0
