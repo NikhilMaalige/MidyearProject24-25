@@ -23,7 +23,7 @@ public class KeyOpenDoor : MonoBehaviour
 
         if (oo == Key){
             if(Door != null){
-                Destroy(Door, 2);
+                Destroy(Door, 3);
             }
             Debug.Log("success");
         }
