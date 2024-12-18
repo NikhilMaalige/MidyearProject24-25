@@ -20,7 +20,7 @@ public class TeleportScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // hopefully thsi works
     }
 
     void OnTriggerEnter(Collider o){
