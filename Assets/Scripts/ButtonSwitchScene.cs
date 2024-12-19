@@ -22,4 +22,8 @@ public class ButtonSwitchScene : MonoBehaviour
 
     // }
 
+    public void onClick(){
+        SceneManager.LoadScene("SampleScene");
+    }
+
 }
