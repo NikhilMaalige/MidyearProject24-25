@@ -85,9 +85,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButton("Jump") && characterController.isGrounded)
         {
             moveDirection.y = jumpPower;
-            while(characterController.isGrounded){
-                // AudioFall.Play();
-            }
         }
         else
         {
