@@ -17,9 +17,20 @@ public class Level2Teleport : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // if (other.tag == "Player")
-        // {
-            SceneManager.LoadScene("Level2.1");
-        // }
+        int tpNum = Random.Range(1, 3);
+        string tpStr = tpNum.ToString();
+
+        switch (tpNum)
+        {
+            case 1:
+                SceneManager.LoadScene("Level2.1");
+                break;
+            case 2:
+                SceneManager.LoadScene("Level2.2");
+                break;
+            default:
+                SceneManager.LoadScene("Level2.3");
+                break;
+        }
     }
 }

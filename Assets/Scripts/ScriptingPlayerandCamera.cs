@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject RegularViewport;
     public GameObject OtherViewport;
-    public AudioSource AudioFall;
+    // public AudioSource AudioFall;
 
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
         {
             moveDirection.y = jumpPower;
             while(characterController.isGrounded){
-                AudioFall.Play();
+                // AudioFall.Play();
             }
         }
         else
