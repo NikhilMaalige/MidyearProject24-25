@@ -22,8 +22,17 @@ public class ButtonSwitchScene : MonoBehaviour
 
     // }
 
-    public void onClick(){
-        SceneManager.LoadScene("SampleScene");
+    public void quit(){
+        Application.Quit();
     }
+
+    public void toMainMenu(){
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void toOptions(){
+        SceneManager.LoadScene("OptionsMenu");
+    }
+    
 
 }

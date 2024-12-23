@@ -26,7 +26,7 @@ public class NewLaserScript : MonoBehaviour
             }
             if (hit.transform.CompareTag("Player")) // Check if the hit object is tagged "Player"
             {
-                SceneManager.LoadScene("SampleScene"); // Load a new scene if the player is hit
+                SceneManager.LoadScene("Level1.1"); // Load a new scene if the player is hit
             }
         }
         else

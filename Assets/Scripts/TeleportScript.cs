@@ -26,7 +26,6 @@ public class TeleportScript : MonoBehaviour
     void OnTriggerEnter(Collider o){
 
         int tpNum = Random.Range(1,3); 
-        string tpStr = tpNum.ToString();
 
         switch(tpNum)
         {
