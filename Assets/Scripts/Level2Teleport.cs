@@ -21,7 +21,7 @@ public class Level2Teleport : MonoBehaviour
 
         switch (tpNum)
         {
-            case 1:
+            case 3:
                 SceneManager.LoadScene("Level2.1");
                 break;
             case 2:

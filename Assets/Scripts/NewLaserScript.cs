@@ -7,31 +7,35 @@ public class NewLaserScript : MonoBehaviour
     [SerializeField]
     private Transform startPoint;
 
-    void Start() // Fixed capitalization
+    void Start()
     {
         lr = GetComponent<LineRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        lr.SetPosition(0, startPoint.position); // Set the starting position of the laser
+        // Set the starting position of the laser
+        lr.SetPosition(0, startPoint.position);
+
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.right, out hit)) // Use -transform.right for leftward direction
+        // Adjust raycast and laser direction to point the other way
+        if (Physics.Raycast(startPoint.position, startPoint.right, out hit)) 
         {
-            if (hit.collider)
+            // Set the laser endpoint to the hit point
+            lr.SetPosition(1, hit.point);
+
+            // Check if the hit object is tagged "Player"
+            if (hit.transform.CompareTag("Player"))
             {
-                lr.SetPosition(1, hit.point); // Set the laser endpoint to the hit point
-            }
-            if (hit.transform.CompareTag("Player")) // Check if the hit object is tagged "Player"
-            {
-                SceneManager.LoadScene("Level1.1"); // Load a new scene if the player is hit
+                // Reset to Level2.1
+                SceneManager.LoadScene("Level2.1");
             }
         }
         else
         {
-            lr.SetPosition(1, transform.position - transform.right * 5000); // Extend the laser far into the distance
+            // Extend the laser far in the other direction
+            lr.SetPosition(1, startPoint.position + startPoint.right * 5000);
         }
     }
 }
