@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 public class ButtonSwitchScene : MonoBehaviour
 {
 
+    public PlayerController Movement;
+    public Canvas Canvas;
+
     // public GameObject switchTo; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +35,11 @@ public class ButtonSwitchScene : MonoBehaviour
 
     public void toOptions(){
         SceneManager.LoadScene("OptionsMenu");
+    }
+    public void closeCanvas(){
+        Canvas.enabled = !Canvas.enabled; 
+        Movement.enabled = true;
+        Cursor.visible = false;
     }
     
 

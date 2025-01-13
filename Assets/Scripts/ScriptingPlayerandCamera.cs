@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController characterController;
     private int toggle = 1;
 
-    private bool canMove = true; 
+    public bool canMove = true; 
 
     void Start()
     {
@@ -128,5 +128,9 @@ public class PlayerController : MonoBehaviour
         RegularViewport.SetActive(false);
         OtherViewport.SetActive(true);
         canMove = false;
+    }
+
+    public bool getCanMove(){
+        return canMove;
     }
 }

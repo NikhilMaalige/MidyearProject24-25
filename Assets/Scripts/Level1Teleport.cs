@@ -25,10 +25,10 @@ public void startRandomLevel()
                 SceneManager.LoadScene("Level1.1");
                 break;
             case 2:
-                SceneManager.LoadScene("Level1.1");
+                SceneManager.LoadScene("Level1.2");
                 break;
             default:
-                SceneManager.LoadScene("Level1.1");
+                SceneManager.LoadScene("Level1.3");
                 break;
         }
     }
