@@ -186,7 +186,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -586335693, guid: ab019dde323bc574795b8dd2f91e2bfc, type: 3}
+    m_HighlightedSprite: {fileID: -1172171975, guid: 74fb29084462bc24dbbf94af2493742f, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -336995115, guid: 595f16aa2d0420442b34f8a44b2898d3, type: 3}
+  m_Sprite: {fileID: -1380420017, guid: 7d17e28741180ed4b8648e8cdb4073e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -698,6 +698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Canvas: {fileID: 618851834}
   display: {fileID: 57880403}
+  fastestTime: {fileID: 0}
   pause: 0
 --- !u!114 &618851832
 MonoBehaviour:
@@ -1108,6 +1109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Canvas: {fileID: 677744733}
   display: {fileID: 1732190946}
+  fastestTime: {fileID: 0}
   pause: 0
 --- !u!1 &1538308015
 GameObject:
