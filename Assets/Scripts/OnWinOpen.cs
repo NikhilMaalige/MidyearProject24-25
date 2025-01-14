@@ -17,6 +17,7 @@ public class OnWinOpen : MonoBehaviour
     {
         timer.dontDestroy();
         timer.pauseTimer(); 
+        Time.timeScale = 0;
 
     }
 
