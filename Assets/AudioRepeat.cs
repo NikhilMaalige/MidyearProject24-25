@@ -14,7 +14,7 @@ public class audio : MonoBehaviour
         
     }
 
-    private void Awake{
+    private void Awake() {
         DontDestroyOnLoad(gameObject);
     }
 }
