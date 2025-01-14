@@ -30,12 +30,14 @@ public class EscapeMenu : MonoBehaviour
             Movement.enabled = false; 
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            Time.timeScale = 0;
 
 
         }
         else {
             Movement.enabled = true;
             Cursor.visible = false;
+            Time.timeScale = 1;
         }
     }
 }
