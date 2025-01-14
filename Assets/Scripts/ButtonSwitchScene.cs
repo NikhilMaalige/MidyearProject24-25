@@ -35,11 +35,15 @@ public class ButtonSwitchScene : MonoBehaviour
 
     public void toOptions(){
         SceneManager.LoadScene("OptionsMenu");
+        Movement.enabled = true;
+        Cursor.visible = true;
     }
     public void closeCanvas(){
         Canvas.enabled = !Canvas.enabled; 
         Movement.enabled = true;
         Cursor.visible = false;
+        Time.timeScale = 1;
+
     }
     
 

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level2Teleport : MonoBehaviour
+public class Level3Teleport : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,13 +22,13 @@ public class Level2Teleport : MonoBehaviour
         switch (tpNum)
         {
             case 3:
-                SceneManager.LoadScene("Level2.1");
+                SceneManager.LoadScene("Level3.1");
                 break;
             case 2:
-                SceneManager.LoadScene("Level2.2");
+                SceneManager.LoadScene("Level3.1");
                 break;
             default:
-                SceneManager.LoadScene("Level2.3");
+                SceneManager.LoadScene("Level3.1");
                 break;
         }
     }

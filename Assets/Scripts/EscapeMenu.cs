@@ -13,6 +13,7 @@ public class EscapeMenu : MonoBehaviour
     void Start()
     {
         Canvas.enabled = !Canvas.enabled;
+        Movement.enabled = true;
     }
 
     // Update is called once per frame
