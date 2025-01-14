@@ -10,6 +10,8 @@ public class Stopwatch : MonoBehaviour
     [SerializeField] public TMP_Text display;
     [SerializeField] public static float currentTime;
 
+    [SerializeField] public TMP_Text fastestTime;
+
     public bool pause = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -53,5 +55,6 @@ public class Stopwatch : MonoBehaviour
         
     }
 
+     
 
 }
