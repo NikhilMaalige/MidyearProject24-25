@@ -24,7 +24,7 @@ public class NewLaserScript : MonoBehaviour
 
             if (hit.transform.CompareTag("Player"))
             {
-                SceneManager.LoadScene("Level2.1");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
         else
