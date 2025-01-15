@@ -21,11 +21,8 @@ public class Level3Teleport : MonoBehaviour
 
         switch (tpNum)
         {
-            case 3:
-                SceneManager.LoadScene("Level3.1");
-                break;
             case 2:
-                SceneManager.LoadScene("Level3.1");
+                SceneManager.LoadScene("Level3.2");
                 break;
             default:
                 SceneManager.LoadScene("Level3.1");
