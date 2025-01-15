@@ -6605,7 +6605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1166511bdaf08164ebb6dca3ab7dd429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movement: {fileID: 0}
+  Movement: {fileID: 300958612}
   Canvas: {fileID: 1365780999}
 --- !u!114 &1365780994
 MonoBehaviour:
@@ -6647,7 +6647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d78236a2afff44cba92254444d1aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movement: {fileID: 0}
+  Movement: {fileID: 300958612}
   Canvas: {fileID: 1365780999}
 --- !u!114 &1365780997
 MonoBehaviour:
