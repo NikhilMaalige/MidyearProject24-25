@@ -9,6 +9,7 @@ public class Level1Teleport : MonoBehaviour
     void Start()
     {
         Stopwatch.currentTime = 0;
+        Time.timeScale = 1;
        
     }
 
