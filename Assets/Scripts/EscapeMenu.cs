@@ -20,12 +20,12 @@ public class EscapeMenu : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyUp("escape")){
-                switchScreen();                
+                SwitchScreen();                
         }
 
 
     }
-    void switchScreen(){
+    void SwitchScreen(){
         Canvas.enabled = !Canvas.enabled;
         if (Canvas.enabled){
             Movement.enabled = false; 
