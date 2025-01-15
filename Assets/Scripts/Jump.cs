@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class Jump : MonoBehaviour
 {
-    public AudioSource audioSource;
-    public AudioSource falling;
+    public AudioClip falling;
+    public AudioSource idk;
 
     // void OnCollisionEnter()
     // {
@@ -14,8 +14,9 @@ public class Jump : MonoBehaviour
     void Update() 
     {
         if (Input.GetKeyDown(KeyCode.Space))         
-        {                 
-            falling.Play();                 
+        {    
+            falling = idk.clip;             
+            idk.Play();      
             // hasPlayedJump = true;         
         } 
         // else hasPlayedJump = false;
