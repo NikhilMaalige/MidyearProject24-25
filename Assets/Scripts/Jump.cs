@@ -7,18 +7,25 @@ public class Jump : MonoBehaviour
     public AudioClip falling;
     public AudioSource idk;
 
-    // void OnCollisionEnter()
-    // {
-    //     audioSource.PlayOneShot(falling, 0.7F);
-    // }
-    void Update() 
+    void OnCollisionEnter()
     {
-        if (Input.GetKeyDown(KeyCode.Space))         
-        {    
+        if(Input.GetKeyDown(KeyCode.Space)){
             falling = idk.clip;             
-            idk.Play();      
-            // hasPlayedJump = true;         
-        } 
-        // else hasPlayedJump = false;
+            idk.Play();   
+        }
     }
+
+    // void Update() 
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))         
+    //     {    
+    //         falling = idk.clip;             
+    //         idk.Play();    
+    //     } 
+    // }
+
+    // public void JumpSound() {
+    //     falling = idk.clip;
+    //     idk.Play();
+    // }
 }
