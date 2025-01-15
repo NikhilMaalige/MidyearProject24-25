@@ -3223,7 +3223,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d32e01782125f4c459cb8146b0fc8d47, type: 2}
-  m_sharedMaterial: {fileID: 4501054681061753913, guid: d32e01782125f4c459cb8146b0fc8d47, type: 2}
+  m_sharedMaterial: {fileID: -4288145330565467354, guid: d32e01782125f4c459cb8146b0fc8d47, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
