@@ -597,6 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d78236a2afff44cba92254444d1aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Movement: {fileID: 0}
   Canvas: {fileID: 0}
 --- !u!114 &1060385720
 MonoBehaviour:
@@ -722,7 +723,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1060385719}
         m_TargetAssemblyTypeName: ButtonSwitchScene, Assembly-CSharp
-        m_MethodName: toOptions
+        m_MethodName: ToOptions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
