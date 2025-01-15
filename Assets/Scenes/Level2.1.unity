@@ -6200,7 +6200,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1289212177}
   - component: {fileID: 1289212176}
-  - component: {fileID: 1289212175}
   m_Layer: 3
   m_Name: LaserBeam2
   m_TagString: Untagged
@@ -6208,19 +6207,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1289212175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289212174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f3065b28dfdc4d47a6b859f4ebbca17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPoint: {fileID: 1289212177}
 --- !u!120 &1289212176
 LineRenderer:
   serializedVersion: 2
