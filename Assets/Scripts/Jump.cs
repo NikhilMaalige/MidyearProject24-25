@@ -11,14 +11,17 @@ public class Jump : MonoBehaviour
     // {
     //     audioSource.PlayOneShot(falling, 0.7F);
     // }
-    void Update() 
-    {
-        if (Input.GetKeyDown(KeyCode.Space))         
-        {    
-            falling = idk.clip;             
-            idk.Play();      
-            // hasPlayedJump = true;         
-        } 
-        // else hasPlayedJump = false;
+    // void Update() 
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))         
+    //     {    
+    //         falling = idk.clip;             
+    //         idk.Play();    
+    //     } 
+    // }
+
+    public void JumpSound() {
+        falling = idk.clip;
+        idk.Play();
     }
 }
