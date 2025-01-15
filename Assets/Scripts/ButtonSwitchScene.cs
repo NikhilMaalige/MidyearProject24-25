@@ -33,7 +33,7 @@ public class ButtonSwitchScene : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void toOptions(){
+    public void ToOptions(){
         SceneManager.LoadScene("OptionsMenu");
         Movement.enabled = true;
         Cursor.visible = true;
