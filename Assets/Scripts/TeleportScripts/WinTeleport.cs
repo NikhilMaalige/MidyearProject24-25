@@ -15,7 +15,8 @@ public class WinTeleport : MonoBehaviour
     {
         
     }
-    public void toWin(){
+    void OnTriggerEnter(Collider other)
+    {
         SceneManager.LoadScene("Win");
     }
 }
